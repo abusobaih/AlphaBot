@@ -15,24 +15,104 @@ comment:  Try to write a short comment about
 
  -->
 
-# AlphaBot
+# How to take the course
+
+Welcome this course is given by : Prof. Dr. Sebastian Zug, Technical University Bergakademie Freiberg
+
+This course was created with LiaScipt. The interactive view of this course is available at the following [Link]()
 
 <br/>
 
-Mobile robot development platform, compatible with Raspberry Pi/Arduino. The main use for this
+**Course Goal**
+
+This course is introduction to Robot, AlphaBot used as example to explain everything related to Robot. The main goal of this course is creating devices. It is difficult to engage in the creation of devices in theory, you have to implement your projects. To achieve this goal, you will get acquainted with a variety of electronic components, programming techniques and approaches to work.
+
+<br/>
+
+**How to take this course ?**
+
+- Lectures.
+
+- Additional materials.
+
+- Practice and exercises.
+
+<br/>
+
+**Test**
+
+<br/>
+
+**Additional Information**
+
+For those who want to learn more about robot, I have given links to materials that will allow you to expand your knowledge.
+
+<br/>
+
+**Communication **
 
 
+## Introduction
+<br/>
+
+
+The steps need to learn programming and electronics to be able to build an AlphaBot?
+
+1. First step you need to learn a Programming language. The best programming language is C programming language, C is the language that used to communicate with electronics and hardware. C is also used to program an Arduino board. C is the preliminary to learn C++, which C++ the most use programming language in Robotics.
+
+2. Second step to learn about Electronics, you can learn electronics using an Arduino board. [Arduino Course](https://liascript.io/course/?https://raw.githubusercontent.com/abusobaih/LiaScript/master/course.md#1)
+
+3. The last step is build and program a Robot.
+
+<br/>
+
+The triangle of learning a Robotics.
+
+![image example](pic/rr.png)
+
+**What is AlphaBot ?**
+
+AlphaBot is a mobile robot development platform, compatible with Raspberry Pi/Arduino. You can get started with robotic development like line tracking, ostacle avoidance, IR romote control and video monitoring vis network.
+
+This course is based on Arduino because this platform is learner, and user-friendly. Arduino board has a significant number of existing modules and there is a possibility to create your own modules.
+
+Course covers all details related to this robot :
+
+
+<br/>
+
+![image example](pic/bot1.jpg)
+
+<br/>
+
+![image example](pic/bot2.jpg)
 ## The Components
 
-1. Arduino interface.
+<br/>
 
-2. Motor interface.
+1. AlphaBot [Mainborad](https://www.waveshare.com/wiki/AlphaBot)
 
-3. Ultrasonic module interface.
+2. Infrared Proximity Sensor.
 
-4. Servo module interface.
+3. Photo Interrupter Sensor.
 
-5. Obstacle avoidance module interface.
+4. Ultrasonic Sensor.
+
+5. Servo Module Interface.
+
+6. Arduino UNO PLUS.
+
+7. Motor with Gearbox.
+
+8. AlphaBot Wheels.
+
+9. IR Remote Controller.
+
+10. Tracker Sensor. The tracker sensor has five analog outputs, and the data output is affected by the distance and color of the detected object. The detected object with the higher infrared reflectance (in white) will give a larger output value, and the one with the lower infrared reflectance (in black) will give a smaller output value. As the sensor approaches a black line, the output value becomes smaller and smaller. So it is easy to get the distance from the black line by checking the analog output (the closer the distance between the sensor and the black line, the smaller the output value will be).
+
+
+
+
 
 
 
@@ -45,3 +125,21 @@ To know more about the installation download this document from [here](https://w
 and this video tutorial about robot installation
 
 !?[Installation tutorial](https://www.youtube.com/watch?v=8TqZNtozA04)
+
+## The Code
+
+After you built the robot, you have to do programming to do that go to Waveshare [Website](https://www.waveshare.com/wiki/AlphaBot), and download a demo code, "AlphabotDemo 7z".
+
+7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives". You need to download it to unzip the demo code.
+
+When you extract 7-zip, you will get two folders, one for Arduino and the other for Raspberry Pi. Open Arduino folder and you will find some examples. By importing those examples into Arduino environment you will get run test right through to do different types of things with the Alphabot.
+
+<br/>
+
+![image example](pic/example.jpg)
+
+Take the whole folder that calls Alphabot which includes the library and copy it, then past this folder into the documents area of where the Arduino stored. Inside Arduino folder, past the file inside libraries floder like photo below.
+
+![image example](pic/ll.jpg)
+
+To use those examples, go to IDE --> File --> Examples --> AlphaBot.
