@@ -47,7 +47,16 @@ This course is introduction to Robot, AlphaBot used as example to explain everyt
 
 For those who want to learn more about robot, I have given links to materials that will allow you to expand your knowledge.
 
+A book about electronics --> Charles Platt. Make: Electronics  [amazon.com](https://www.amazon.com/Make-Electronics-Learning-Through-Discovery/dp/1680450263/ref=sr_1_1?ie=UTF8&qid=1505854474&sr=8-1&keywords=Make%3A+Electronics)
 <br/>
+
+**What courses would be covered through this Robot?**
+
+1. Algorithm.
+
+2. Software development.
+
+3.
 
 **Communication **
 
@@ -86,6 +95,20 @@ Course covers all details related to this robot :
 <br/>
 
 ![image example](pic/bot2.jpg)
+
+## How to program a digital device?
+
+Let's imagine that a controller is a box and this box has some space to store data and also instructions. The controller follows the instructions, which are coded in zero and ones, the same as the data. These instruction is stored as computer code. So because many people cannot write computer codes, programming languages were founded to translate between human languages that  we speak to the set of instructions written in one and zero that devices can understand.
+
+All digital devices work with data which is coded in binary code.
+
+To program a device, first you have to define an algorithm, or a sequence of activities and actions that the device is going to perform. Then transfer this algorithm in a familiar language. Then following the rules of the programming languages to translate it.
+
+The cycle of the program is as follow:
+
+Starts with an idea --> written in our native languages --> coding --> compilation and download.
+
+
 ## The Components
 
 <br/>
