@@ -133,11 +133,10 @@ Starts with an idea --> written in our native languages --> coding --> compilati
 
 10. Tracker Sensor. The tracker sensor has five analog outputs, and the data output is affected by the distance and color of the detected object. The detected object with the higher infrared reflectance (in white) will give a larger output value, and the one with the lower infrared reflectance (in black) will give a smaller output value. As the sensor approaches a black line, the output value becomes smaller and smaller. So it is easy to get the distance from the black line by checking the analog output (the closer the distance between the sensor and the black line, the smaller the output value will be).
 
+11. Speed Testing Module. The speed testing module contains a coded disc and a WYC-H206 photoelectric sensor. WYC-H206 photoelectric sensor has an infrared transmitter and an infrared receiver. When the infrared receiver is obscured, unable to receive infrared light, the sensor will output a high-level voltage. The high-level voltage passes the inverting Schmitt trigger and becomes a low-level voltage. At this point, the relative indicator lights up. When the coded disc runs, DOUT will output a series of high-level pulses and low-level pulses. By checking the number of pluses in cycle time, you can get the speed of the smart robot. Here, we use the Schmitt trigger because it has a stable output signal, a clear waveform without any jitter.
+<br/>
 
-
-
-
-
+The robot has 2 motors and 2 wheels, so it shall need a third support. For this purpose, they used a ball, which will allow the robot to move and turn about the axis which passes through the wheels.
 
 ## Robot Installation
 
@@ -161,8 +160,35 @@ When you extract 7-zip, you will get two folders, one for Arduino and the other 
 
 ![image example](pic/example.jpg)
 
-Take the whole folder that calls Alphabot which includes the library and copy it, then past this folder into the documents area of where the Arduino stored. Inside Arduino folder, past the file inside libraries floder like photo below.
+Take the whole folder that calls Alphabot which includes the library and copy it, then past this folder into the documents area of where the Arduino stored. Inside Arduino folder, past the file inside libraries folder like photo below.
 
 ![image example](pic/ll.jpg)
 
 To use those examples, go to IDE --> File --> Examples --> AlphaBot.
+
+## Line Follower Robot
+
+Line follower robot is an automated guided vehicle, which follow a visual line embedded on the floor. It follows a specific path on the ground by following the black line.
+
+It used in military application, human assistance purpose and delivery services.
+
+<br/>
+
+**What the robot needs to follow a line?**
+
+Its wheels and the sensors. The robot will follow the black line because of using IR line sensor, from this [link](https://liascript.io/course/?https://raw.githubusercontent.com/abusobaih/LiaScript/Arduino/course.md#13) you can know more about this sensor.
+
+IR line sensor [Datasheet](https://cdn-reichelt.de/documents/datenblatt/C200/ST1140.pdf).
+
+<br/>
+
+**How the robot will move?**
+
+
+import: http://www.plantuml.com/plantuml/png/VT2nQiCm40RW_PxY7-LNI9TGGgP2eNJfg4JdM5I-2v9SaxUlv0I3tD35kXj-Vp-tJzd6F8s1be78zmO7nKdpWCIID2Qe80-CKx3dRmGltDLTOBuuTGJiSDGus-XWNcjkr5nZiozp3IOxbi-LsS6AW_EHpzchT2z4u90OHhG34OlpFS7tC0Vb2eVRyeV0VNxKMTlOi6bpkxT1BVGvHS5RJPdbkNV2-_5OK3Ge7cnLqRBHNuO_Rh3FtPNzM5AcFgsxggtuzDZpu7F1YdM9EedROhlsreFz-VVEMvfIrYljopADuHS0
+
+The image below shows how the robot will move according to the background under the sensor.
+
+![image example](pic/linefollow.png)
+
+According to this relay algorithm, you can now write the main code to make the robot follows the black line.
