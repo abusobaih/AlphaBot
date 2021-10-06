@@ -13,6 +13,7 @@ comment:  Try to write a short comment about
           your course, multiline is also okay.
 
 import: https://raw.githubusercontent.com/liascript/CodeRunner/master/README.md
+        https://github.com/LiaTemplates/plantUML/blob/0.0.9/README.md
 
 @run: @LIA.eval(`["main.c"]`, `gcc -Wall main.c -o a.out`, `./a.out`)
 
@@ -379,10 +380,8 @@ IR line sensor [Datasheet](https://cdn-reichelt.de/documents/datenblatt/C200/ST1
 
 **How the robot will move?**
 
-![image example](pic/uml.jpg)
 
-
-```
+``` text @plantUML
 @startuml
 start
 
