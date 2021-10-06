@@ -15,7 +15,7 @@ comment:  Try to write a short comment about
 
  -->
 
-# How to take the course
+# About the Course
 
 Welcome this course is given by : Prof. Dr. Sebastian Zug, Technical University Bergakademie Freiberg
 
@@ -81,7 +81,7 @@ The triangle of learning a Robotics.
 
 **What is AlphaBot ?**
 
-AlphaBot is a mobile robot development platform, compatible with Raspberry Pi/Arduino. You can get started with robotic development like line tracking, ostacle avoidance, IR romote control and video monitoring vis network.
+AlphaBot is a mobile robot development platform, compatible with Raspberry Pi/Arduino. You can get started with robotic development like line tracking, obstacle avoidance, IR remote control and video monitoring vis network.
 
 This course is based on Arduino because this platform is learner, and user-friendly. Arduino board has a significant number of existing modules and there is a possibility to create your own modules.
 
@@ -96,7 +96,7 @@ Course covers all details related to this robot :
 
 ![image example](pic/bot2.jpg)
 
-## How to program a digital device?
+## What you need before you can learn ?
 
 Let's imagine that a controller is a box and this box has some space to store data and also instructions. The controller follows the instructions, which are coded in zero and ones, the same as the data. These instruction is stored as computer code. So because many people cannot write computer codes, programming languages were founded to translate between human languages that  we speak to the set of instructions written in one and zero that devices can understand.
 
@@ -108,6 +108,127 @@ The cycle of the program is as follow:
 
 Starts with an idea --> written in our native languages --> coding --> compilation and download.
 
+<br/>
+
+### Algorithm
+
+<br/>
+
+Anyone who is learning to code should know about algorithms --> Anyone who is learning algorithm should know fundamentals of programming.
+
+<br/>
+
+**Why I need to learn algorithm as a Robotics Engineer ?**
+
+- Learning about algorithm gives you deeper understanding about complexity and efficiency in programming.
+
+- Having a better sense of how your code will perform in different situations.
+
+<br/>
+
+**Algorithm is .....**
+
+![image example](pic/algorithm.jpg)
+
+**Examples of algorithm**
+
+1. A recipe.
+
+2. Your morning routine when you wake up.
+
+3. A driving directions you follow to get to a destination.
+
+<br/>
+
+**How algorithm works ?**
+
+You start with a problem and then break it down into distinct steps, then identify which algorithm is the best for that problem or a task.
+
+<br/>
+
+**What I need to know before writing an Algorithm ?**
+
+1. Clear problem statement, clear idea of what problem you are trying to solve.
+
+2. Steps in the algorithm need to be in a very specific order.
+
+3. The algorithm should produce a result.
+
+4. The algorithm should complete in a finite amount of time.
+
+
+
+### Introduction to C programming language
+
+C programming language it is one of the oldest programming languages. A lot of modern programming languages are based off of C.
+[C course](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaBooks/C-Programming/master/README.md#2)
+
+Running a program in C, you have to do two things :
+
+- Building a program or compiling a program, that means take all the written code and translated it into a language that the computer can understand and execute it.
+
+- Run the file that you have built.
+
+Before you can start programming in C, you will need a C compiler. A compiler is a program that converts C code into executable machine code. Most popular C compilers/ IDEs included: [Here](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaBooks/C-Programming/master/README.md#7)
+
+
+
+<br/>
+
+**Variables**
+
+Variables it's a container that store different pieces of information like numbers, texts or characters. These variables make it easier to keep track of and manage all the data in the program.
+
+
+To write a variable you need to follow this formula ⟶ dataType variableName = value;
+
+Example: char CharacterName [] = "John";
+
+         int age = 35;
+
+<br/>
+
+**Data Type **
+
+- int : it indicates that the data can be negative or positive and zero. It takes two bytes in the memory and can be a number between -32,767 to 32,767.
+
+- float : it can use for a decimal number like 2.162 or in scientific notation like 6.022E23, where the number after e is the exponent (6.002 * 10 ^23). It take 4 bytes in the memory.
+
+- double: it  can use to represent a decimal number like  double gpa = 1.3;
+
+- char : it can use to store a single character like char grade = 'A';. **You can just store one character**.
+
+- To create a string of characters you can use char name [ ] = "TU Bergakademie Freiberg";
+
+*Example
+
+```C
+
+#include <stdio.h>
+
+int main(void)
+{
+  printf("Hello, World!\n");
+  return 0;
+
+}
+```
+*The parts of the above example:*
+
+- In the C Programming Language, the #include directive tells the preprocessor to insert the contents of another file into the source code at the point where the #include directive is found. Include directives are typically used to include the C header files for C functions that are held outside of the current source file.
+
+- main() it is a method, a container where we can put our code, and main contains the code where it will be executed after run the program.
+Run the program will come into the main method and will execute all the instructions inside of it
+
+- printf shows the actual output 
+
+
+
+
+
+## Getting Started
+
+The goal of this course is to introduce you the basic and components of AlphaBot.
 
 ## The Components
 
@@ -185,7 +306,40 @@ IR line sensor [Datasheet](https://cdn-reichelt.de/documents/datenblatt/C200/ST1
 **How the robot will move?**
 
 
-import: http://www.plantuml.com/plantuml/png/VT2nQiCm40RW_PxY7-LNI9TGGgP2eNJfg4JdM5I-2v9SaxUlv0I3tD35kXj-Vp-tJzd6F8s1be78zmO7nKdpWCIID2Qe80-CKx3dRmGltDLTOBuuTGJiSDGus-XWNcjkr5nZiozp3IOxbi-LsS6AW_EHpzchT2z4u90OHhG34OlpFS7tC0Vb2eVRyeV0VNxKMTlOi6bpkxT1BVGvHS5RJPdbkNV2-_5OK3Ge7cnLqRBHNuO_Rh3FtPNzM5AcFgsxggtuzDZpu7F1YdM9EedROhlsreFz-VVEMvfIrYljopADuHS0
+![image example](pic/uml.jpg)
+
+
+```
+@startuml
+start
+
+if( Do both sensors on the black line) then (Yes)
+  : Forward (Both motors with the same speed and direction);
+
+ else (no)
+
+endif
+ if (Does only the left sensor on the black line) then (yes)
+     : Turn Left ( Left motor OFF);
+  else (no)
+
+
+endif
+if ( Does only the right sensor on the black line) then (yes)
+    : Turn Right (Right motor OFF);
+else (no)
+endif
+if ( Do both sensors on the white background) then (yes)
+   : (Both motors have same speed and direction);
+else (no)
+endif
+
+stop
+@enduml
+```
+
+
+
 
 The image below shows how the robot will move according to the background under the sensor.
 
