@@ -191,17 +191,27 @@ Example: char CharacterName [] = "John";
 
 <br/>
 
-**Data Type **
+**Data Type**
 
-- int : it indicates that the data can be negative or positive and zero. It takes two bytes in the memory and can be a number between -32,767 to 32,767.
+- `int` : it indicates that the data can be negative or positive and zero. It
+  takes two bytes in the memory and can be a number between
+  `-32.767` to `32.767`.
 
-- float : it can use for a decimal number like 2.162 or in scientific notation like 6.022E23, where the number after e is the exponent (6.002 * 10 ^23). It take 4 bytes in the memory.
+- `float` : it can use for a decimal number like `2.162` or in scientific
+  notation like `6.022E23`, where the number after `e` is the exponent
+  ($6.002 * 10^{23}$). It take 4 bytes in the memory.
 
-- double: it  can use to represent a decimal number like  double gpa = 1.3;
+- `double` : it  can use to represent a decimal number like `double gpa = 1.3;`
 
-- char : it can use to store a single character like char grade = 'A';. **You can just store one character**.
+- `char` : it can use to store a single character like
 
-- To create a string of characters you can use char name [ ] = "TU Bergakademie Freiberg";
+  `char grade = 'A';`.
+
+  **You can just store one character**.
+
+- To create a string of characters you can use
+
+  `char name [ ] = "TU Bergakademie Freiberg";`
 
 *Example*
 
