@@ -12,8 +12,11 @@ narrator:  US English Female
 comment:  Try to write a short comment about
           your course, multiline is also okay.
 
+import: https://raw.githubusercontent.com/liascript/CodeRunner/master/README.md
 
- -->
+@run: @LIA.eval(`["main.c"]`, `gcc -Wall main.c -o a.out`, `./a.out`)
+
+-->
 
 # About the Course
 
@@ -200,19 +203,20 @@ Example: char CharacterName [] = "John";
 
 - To create a string of characters you can use char name [ ] = "TU Bergakademie Freiberg";
 
-*Example
+*Example*
 
-```C
-
+```c
 #include <stdio.h>
 
 int main(void)
 {
   printf("Hello, World!\n");
   return 0;
-
 }
 ```
+@run
+
+
 *The parts of the above example:*
 
 - In the C Programming Language, the #include directive tells the preprocessor to insert the contents of another file into the source code at the point where the #include directive is found. Include directives are typically used to include the C header files for C functions that are held outside of the current source file.
@@ -220,7 +224,7 @@ int main(void)
 - main() it is a method, a container where we can put our code, and main contains the code where it will be executed after run the program.
 Run the program will come into the main method and will execute all the instructions inside of it
 
-- printf shows the actual output 
+- printf shows the actual output
 
 
 
